@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME}
+
+  data:
+    mongodb:
+      uri: ${DATABASE_URI}
+
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+    time-zone: UTC
+
+app:
+  jwtSecret: ${JWT_SECRET}
+  jwtExpirationInMs: ${JWT_EXPIRATION}
